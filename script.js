@@ -1,3 +1,32 @@
+let menuIcon = document.querySelector('#menu-icon');
+let navBar = document.querySelecto('section');
+let sections = document.querySelecto('.navbar');
+let navLinks = document.querySelecto('header nav a');
+
+
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute;
+
+        if (top >= offset && top < offset + height) {
+            navLinks.forEach(links => {
+                links.classList.remove('active');
+                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+            
+            });
+        }
+    
+    })
+}
+
+menuIcon.onclick =  () => {
+    menuIcon.classList.toggle('bx-x');
+    navBar.classlist.toggle('active');
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     const name1 = "Rayane";
     const name2 = "Guebre";

@@ -86,11 +86,12 @@
     </section>
      <section class="contact" id="contact">
         <h2 class="heading">Contact<span>Me</span></h2>
-        <form action="">
+        <form action="https://api.web3forms.com/submit" method="POST">>
             <div class="input-group">
+                  <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
                 <div class="input-box">
                     <input type="text"
-                    placeholder="Full Name">
+                    placeholder="Full Name" id="name" class="item" autocomplete="off">
                     <input type="email"
                     placeholder="Email">
                 </div>
