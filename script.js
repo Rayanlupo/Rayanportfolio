@@ -1,13 +1,13 @@
 // Inizializza EmailJS con il tuo user_id
 (function(){
-    emailjs.init("YOUR_USER_ID"); // Sostituisci con il tuo user ID EmailJS
+    emailjs.init("Krl44drgS9Wkz0efk"); // Sostituisci con il tuo user ID EmailJS
 })();
 
 // Aggiungi l'evento di submit al form
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault(); // Previeni il comportamento predefinito del form
     
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+    emailjs.sendForm('service_ithc03n', 'template_ebj6a49', this)
         .then(function(response) {
             alert('Email sent successfully!');
             console.log('Email sent successfully!', response);
@@ -44,6 +44,10 @@ window.onscroll = () => {
             });
         }
     });
+
+    // Chiudi il menu quando si scrolla
+    menuIcon.classList.remove('bx-x');
+    navBar.classList.remove('active');
 };
 
 // Effetto di scrittura per il nome
@@ -52,4 +56,28 @@ document.addEventListener('DOMContentLoaded', function() {
     const name2 = "Guebre";
 
     const typingElement1 = document.getElementById('name1');
-    const typingElement
+    const typingElement2 = document.getElementById('name2');
+
+    let index1 = 0;
+    let index2 = 0;
+
+    function typeEffect1() {
+        if (index1 < name1.length) {
+            typingElement1.innerHTML += name1.charAt(index1);
+            index1++;
+            setTimeout(typeEffect1, 200);
+        } else {
+            typeEffect2();
+        }
+    }
+
+    function typeEffect2() {
+        if (index2 < name2.length) {
+            typingElement2.innerHTML += name2.charAt(index2);
+            index2++;
+            setTimeout(typeEffect2, 200);
+        }
+    }
+
+    typeEffect1();
+});
