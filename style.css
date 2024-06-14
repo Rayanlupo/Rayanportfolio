@@ -486,3 +486,16 @@ span{
     
 
 }
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-left {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.content-right {
+    flex: 2;
+}
