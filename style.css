@@ -473,3 +473,8 @@ span{
 .content-right {
     flex: 2;
 }
+@font-face {
+    font-family: League Spartan;
+    src: url("main/League-Spartan-Bold.otf") format("opentype");
+}
+
