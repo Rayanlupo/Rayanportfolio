@@ -79,7 +79,7 @@ section{
     gap: 15rem;
 }
 .home-content{
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     align-items: baseline;
     text-align: left;
@@ -93,13 +93,13 @@ span{
     color: var(--main-color);
 }
 .home h3{
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     margin-top: 1rem;
     font-size: 3.5rem;
     line-height: 1;
 }
 .home-content h1{
-    font-size: 7rem;
+    font-size: 30px;
     font-weight: 700;
     margin-top: 1.5rem;
     line-height: 1;
@@ -114,18 +114,26 @@ span{
      box-shadow: 0 0 10px whitesmoke; 
 }
 .home-img img:hover{
-    box-shadow: 0 0 12px whitesmoke,
+    box-shadow: 0 0 12px rgba(245, 245, 245, 0.479),
                 0 0 15px whitesmoke,
                 0 0 17px whitesmoke,
                 0 0 25px whitesmoke,
                 0 0 23px whitesmoke;
 }
 .home-content p{
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 10rem;
+    font-weight: 900;
     line-height: 1.8;
     max-width: 1000px;
+
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    
+               
 }
+
+
 .social-icons a{
     display: inline-flex;
     justify-content: center;
@@ -180,41 +188,7 @@ span{
     color: black;
     box-shadow: 0 0 25px var(--main-color);
 }
-/* Animazione di scrittura */
-.typing {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 0.08em solid var(--main-color); /* Barra di scrittura più sottile */
-    animation: typing 2s steps(30, end) forwards, /* Rallentare l'animazione */
-               blink-caret 0.75s step-end infinite;
-    font-size: 8rem; /* Aumentare la dimensione del testo */
-}
 
-.typing2 {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 0.08em solid var(--main-color); /* Barra di scrittura più sottile */
-    animation: typing2 2s steps(30, end) forwards, /* Rallentare l'animazione */
-               blink-caret 0.75s step-end infinite;
-    font-size: 8rem; /* Aumentare la dimensione del testo */
-}
-
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-
-@keyframes typing2 {
-    from { width: 0 }
-    to { width: 100% }
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: var(--main-color); }
-}
 .heading{
     font-size: 8rem;
     text-align:center;
@@ -253,10 +227,10 @@ span{
 }
 .timeline-item:nth-child(odd){
     text-align: right;
-    padding-right: calc(50% - 30px);
+    padding-right: calc(50% + 30px);
 }
 .timeline-item:nth-child(even){
-    padding-left: calc(50% - 30px);
+    padding-left: calc(50% + 30px);
 }
 .timeline-dot{
     height: 21px;
@@ -276,7 +250,7 @@ span{
     margin: 6px 0 15px;
 }
 .timeline-content{
-    background: var(--bg-color);
+    background-color: var(--bg-color);
     padding: 30px 50px;
     border-radius: 4rem;
     box-shadow: 0 0 10px var(--main-color);
