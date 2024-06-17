@@ -493,20 +493,24 @@ span{
     font-size: 50px;
 }
 .skills .skills-content{
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 15px;
 
 } 
 .skills .skills-content .card{
-    box-shadow: 0 5px 10px;
+    box-shadow: 0 5px 10px grey;
     border-radius: 5px;
     background: var(--second-bg-color);
     text-align: center;
     padding: 30px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 .skills .skills-content .card img{
     height: 80px;
+    align-self: center;
 }
 .skills .skills-content .card h3{
     padding: 10px 0;
@@ -518,5 +522,10 @@ span{
     font-size: 15px;
     line-height: 1,8;
 }
-
+.projects{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
 
