@@ -480,60 +480,43 @@ span{
     font-style: normal;
 
 }
-
-
-
-
-
-
-
-
-
-*::before{
-    box-sizing: border-box;
+.skills{
+    background: var(--bg-color);
+    padding: 15 9%;
+    padding-bottom: 100px;
 }
-.card{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 300px;
-    flex-shrink: 0;
-    flex-grow: 0;
-    max-width: 100%;
-    background-color: var(--second-bg-color);
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 1rem;
+.skills .heading{
+    text-align: center;
+    padding-bottom: 15px;
+    color: var(--text-color);
+    text-shadow: 0 5px 10px white;
+    font-size: 50px;
 }
-.card-img{
-    padding-bottom: 56.25%;
-    position: relative;
+.skills .skills-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+
+} 
+.skills .skills-content .card{
+    box-shadow: 0 5px 10px;
+    border-radius: 5px;
+    background: var(--second-bg-color);
+    text-align: center;
+    padding: 30px 20px;
 }
-.card-img img{
-    position: absolute;
-    width: 100%;
+.skills .skills-content .card img{
+    height: 80px;
 }
-.card-body{
-    padding: 1.5rem;
+.skills .skills-content .card h3{
+    padding: 10px 0;
+    color: var(--text-color);
+    font-size: 22px;
 }
-.card-title{
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 1.33;
+.skills .skills-content .card p{
+    color: var(--text-color);
+    font-size: 15px;
+    line-height: 1,8;
 }
-.card-body p{
-    margin-top: 0.75rem;
-    line-height: 1.5
-}
-.skills-content{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+
+
