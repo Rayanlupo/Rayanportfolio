@@ -7,7 +7,7 @@
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault(); // Previeni il comportamento predefinito del form
     
-    emailjs.sendForm('rayan-portfolio', 'rayan_portfolio', this)
+    emailjs.sendForm('rayan_portfolio', 'rayan_portfolio', this)
         .then(function(response) {
             alert('Email sent successfully!');
             console.log('Email sent successfully!', response);

@@ -528,4 +528,34 @@ span{
     flex-wrap: wrap;
     margin-top: 100px;
 }
+.project{
+    width: 325;
+    background-color: var(--second-bg-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+.project img{
+    width: 100%;
+    height: 100;
+}
+.project-content{
+    padding: 16px;
+}
+.project-contect h2{
+    font-size: 50px;
+    color: var(--main-color);
+    margin-bottom: 8px;
+}
+.project-content h3{
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 8px;
 
+}
+.project-content p{
+    font-size: 14px;
+    color: var(--text-color);
+    line-height: 1.8;
+}
