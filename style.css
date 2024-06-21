@@ -377,90 +377,9 @@ span{
     display: inline-block;
     padding: 0 15px;
 }
-@media(max-width:1285px){
-    html{
-        font-size: 55%;
-    }
-    .service-container{
-        padding-bottom: 7rem;
-        grid-template-columns: repeat(2,1fr);
-        margin: 0 5rem;
-    }
-}
-@media(max-width:991px){
-    html{
-        padding: 2rem 5%;
-    }
-    section{
-        padding: 10rem 3% 2rem;
-    }  
-    .timeline-items::before{
-        left: 7px;
-    }
-    .timeline-item:nth-child(odd){
-        text-align: left;
-        padding-right: 0;
-    }
-    .timeline-item:nth-child(odd),
-    .timeline-item:nth-child(even){
-        padding-left: 37px;
-    }
-    .timeline-dot{
-        left: 0;
-    }
-    .service{
-        padding-bottom: 7rem;
-    }
-    .footer{
-        padding: 2rem 3%;
-    }
-}
-@media(max-width:895px){
-    #menu-icon{
-        display: block;
-    }
-    .navbar{
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 50%;
-        padding: 1rem 3%;
-        background: rgba(0, 0, 0, 0.829);
-        backdrop-filter: blur(20px);
-        border-bottom-left-radius: 2rem;
-        border-bottom: 2px solid var(--main-color);
-        border-left: 2px solid var(--main-color);
-        display: none;
-    }
-    .navbar.active{
-        display: block;
-    }
-    .navbar a{
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-        color: white;
-    }
-    .home{
-        flex-direction: column-reverse;
-        margin: 5rem 4rem;
-    }
-    .home-content h3{
-        font-size: 2.6rem;
-    }
-    .home-content h1{
-        font-size: 8rem;
-        margin-top: 3rem;
-    }
-    .home-content p{
-        max-width: 600px;
-        margin: 0 auto;
-    }
-    .home-img img{
-        width: 56vw;
-    }
 
-}
+
+
 .about-me{
     font-size: 20px;
     font-weight: 300;
@@ -536,10 +455,16 @@ span{
 .projects{
     display: flex;
     justify-content: center;
-
     flex-wrap: wrap;
     margin-top: 100px;
     align-items: center;
+    background-color: var(--bg-color);
+}
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    margin: 10px;
 }
 .project{
     width: 275;
@@ -548,6 +473,11 @@ span{
     overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     margin: 20px;
+    position: relative;
+}
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgb(0, 0, 0);
 }
 .project img{
     width: 120;
